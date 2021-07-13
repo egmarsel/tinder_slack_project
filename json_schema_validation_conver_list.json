@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "channels": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "is_channel": {
+              "type": "boolean"
+            },
+            "is_group": {
+              "type": "boolean"
+            },
+            "is_im": {
+              "type": "boolean"
+            },
+            "created": {
+              "type": "integer"
+            },
+            "is_archived": {
+              "type": "boolean"
+            },
+            "is_general": {
+              "type": "boolean"
+            },
+            "unlinked": {
+              "type": "integer"
+            },
+            "name_normalized": {
+              "type": "string"
+            },
+            "is_shared": {
+              "type": "boolean"
+            },
+            "parent_conversation": {
+              "type": "null"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "is_ext_shared": {
+              "type": "boolean"
+            },
+            "is_org_shared": {
+              "type": "boolean"
+            },
+            "shared_team_ids": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "pending_shared": {
+              "type": "array",
+              "items": {}
+            },
+            "pending_connected_team_ids": {
+              "type": "array",
+              "items": {}
+            },
+            "is_pending_ext_shared": {
+              "type": "boolean"
+            },
+            "is_member": {
+              "type": "boolean"
+            },
+            "is_private": {
+              "type": "boolean"
+            },
+            "is_mpim": {
+              "type": "boolean"
+            },
+            "topic": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "creator": {
+                  "type": "string"
+                },
+                "last_set": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "value",
+                "creator",
+                "last_set"
+              ]
+            },
+            "purpose": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "creator": {
+                  "type": "string"
+                },
+                "last_set": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "value",
+                "creator",
+                "last_set"
+              ]
+            },
+            "previous_names": {
+              "type": "array",
+              "items": {}
+            },
+            "num_members": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "is_channel",
+            "is_group",
+            "is_im",
+            "created",
+            "is_archived",
+            "is_general",
+            "unlinked",
+            "name_normalized",
+            "is_shared",
+            "parent_conversation",
+            "creator",
+            "is_ext_shared",
+            "is_org_shared",
+            "shared_team_ids",
+            "pending_shared",
+            "pending_connected_team_ids",
+            "is_pending_ext_shared",
+            "is_member",
+            "is_private",
+            "is_mpim",
+            "topic",
+            "purpose",
+            "previous_names",
+            "num_members"
+          ]
+        }
+      ]
+    },
+    "response_metadata": {
+      "type": "object",
+      "properties": {
+        "next_cursor": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "next_cursor"
+      ]
+    }
+  },
+  "required": [
+    "ok",
+    "channels",
+    "response_metadata"
+  ]
+}
