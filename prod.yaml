@@ -1,5 +1,5 @@
 url_web_hooks: "https://hooks.slack.com/services/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"
-auth_token: "xoxb-2267210264819-2267045417282-idg0BL1QOjolqZcJwSJ6bd42"
+auth_token: "xoxb-2267210264819-2267045417282-qqjTOGH6h44nSb14PQYAd3PU"
 content_type: "application/x-www-form-urlencoded, application/json"
 url: "https://slack.com/api/"
 test_channel: "test_messages"
